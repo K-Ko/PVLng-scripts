@@ -2,7 +2,7 @@
 ##############################################################################
 ### @author      Patrick Feisthammel <patrick.feisthammel@citrin.ch> 
 ### @copyright   2014 Patrick Feisthammel
-### @license     GNU General Public License http://www.gnu.org/licenses/gpl.txt
+### @license     MIT License (MIT) http://opensource.org/licenses/MIT
 ### @version     1.0.0
 ##############################################################################
 
