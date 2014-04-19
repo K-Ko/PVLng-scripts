@@ -28,10 +28,9 @@ if test $rc -ne 0; then
      error_exit "cUrl error for Tesla API: $rc"
 fi
 
-### Replace null values
-if sed 's/:null/:0/g' <$RESPONSEFILE >$TMPFILE ; then
-  mv $TMPFILE $RESPONSEFILE
-fi
+### Remove null values
+perl -pe 's/,"[a-z0-9_]+":null//g' <$RESPONSEFILE >$TMPFILE 
+mv $TMPFILE $RESPONSEFILE
 
 ### Test mode
 log 2 "Tesla Server response:"
