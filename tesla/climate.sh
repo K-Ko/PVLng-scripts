@@ -34,9 +34,9 @@ read_config "$1"
 test "$TRACE" && set -x
 
 test "$TESLA_ID" || error_exit "Missing TESLA_ID)!"
-test "$GUID" || error_exit "Missing Wunderground group channel GUID (GUID)!"
+test "$GUID" || error_exit "Missing Tesla Motors group channel GUID (GUID)!"
 COOKIE_FILE=$pwd/cookies.txt
-test -r "$COOKIE_FILE" || error_exit "Cookie-File not readable ($COOKIE_FILE)"
+test -r "$COOKIE_FILE" || error_exit "Cookie-File not readable ($COOKIE_FILE). Use login.sh to create one."
 APIURL=https://portal.vn.teslamotors.com/vehicles/$TESLA_ID/command/climate_state
 
 ##############################################################################
