@@ -6,8 +6,8 @@ The loginname and the password are the same as you use for the mytelsa website.
 
   login.sh whoever@example.com "supersecret password"
 
-This login script generates the cookie file and shows the vehicle id which must
-be set in the config script.
+This login script generates the cookie file and shows the (vehicle) id which must
+be set in the config script. This is not the vehicle_id in the output, but the 'id'!
 
 
 We use two Tesla Motors API endpoints to fetch data, so you have to add two
