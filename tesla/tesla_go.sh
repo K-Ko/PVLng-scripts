@@ -28,7 +28,7 @@ if test $rc -ne 0; then
      error_exit "cUrl error for Tesla API: $rc"
 fi
 
-### Remove null values
+### Remove null values, they mean: no information
 perl -pe 's/,"[a-z0-9_]+":null//g' <$RESPONSEFILE >$TMPFILE 
 mv $TMPFILE $RESPONSEFILE
 
