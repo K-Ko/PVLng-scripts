@@ -1,0 +1,27 @@
+##############################################################################
+### @author      Patrick Feisthammel <patrick.feisthammel@citrin.ch>
+### @copyright   2014 Patrick Feisthammel
+### @license     MIT License (MIT) http://opensource.org/licenses/MIT
+### @version     1.0.0
+##############################################################################
+
+##############################################################################
+### Information about the REST-API from Tesla can be found here:
+### http://www.teslamotorsclub.com/showthread.php/13410-Model-S-REST-API/page5
+### http://docs.timdorr.apiary.io/q:q
+##############################################################################
+
+##############################################################################
+### Replace the placeholders with your data:
+###
+### - TESLA_ID  Tesla ID - use login.sh to fetch that and to create cookies.txt
+###
+### required
+##############################################################################
+#TESLA_ID        11111
+
+##############################################################################
+### Tesla group channel GUID
+### required
+##############################################################################
+#GUID             ""
